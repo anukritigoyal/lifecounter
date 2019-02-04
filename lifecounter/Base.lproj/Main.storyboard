@@ -804,18 +804,12 @@
         <scene sceneID="tr4-xg-Ght">
             <objects>
                 <viewController storyboardIdentifier="history" id="9Lj-5K-59Y" customClass="HistoryController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="U5O-RQ-uca">
+                    <view key="view" contentMode="scaleToFill" id="U5O-RQ-uca">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-RG-zOp">
-                                <rect key="frame" x="180" y="65" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UVD-ZP-1SC">
-                                <rect key="frame" x="20" y="120" width="375" height="605"/>
+                                <rect key="frame" x="20" y="120" width="374" height="605"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="605" id="I2v-yM-8Ln"/>
@@ -823,15 +817,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-RG-zOp">
+                                <rect key="frame" x="164" y="64" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UVD-ZP-1SC" firstAttribute="leading" secondItem="U5O-RQ-uca" secondAttribute="leadingMargin" id="1MI-9d-8Ul"/>
-                            <constraint firstItem="aSH-RG-zOp" firstAttribute="centerX" secondItem="UVD-ZP-1SC" secondAttribute="centerX" id="Dgk-dI-L5y"/>
-                            <constraint firstItem="aSH-RG-zOp" firstAttribute="leading" secondItem="vjb-FZ-Oe7" secondAttribute="leading" constant="180" id="NU6-hI-uPB"/>
+                            <constraint firstItem="aSH-RG-zOp" firstAttribute="centerX" secondItem="U5O-RQ-uca" secondAttribute="centerX" id="Ikp-r9-iwZ"/>
                             <constraint firstItem="UVD-ZP-1SC" firstAttribute="top" secondItem="aSH-RG-zOp" secondAttribute="bottom" constant="34" id="cSq-l0-3QX"/>
-                            <constraint firstItem="vjb-FZ-Oe7" firstAttribute="trailing" secondItem="UVD-ZP-1SC" secondAttribute="trailing" constant="342" id="ruf-tj-dK1"/>
+                            <constraint firstItem="aSH-RG-zOp" firstAttribute="leading" secondItem="vjb-FZ-Oe7" secondAttribute="leading" constant="180" id="lT6-aX-ckq"/>
                             <constraint firstItem="aSH-RG-zOp" firstAttribute="top" secondItem="vjb-FZ-Oe7" secondAttribute="top" constant="45" id="vbC-R0-61m"/>
+                            <constraint firstItem="aSH-RG-zOp" firstAttribute="centerX" secondItem="UVD-ZP-1SC" secondAttribute="centerX" id="xw4-gk-N0N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vjb-FZ-Oe7"/>
                     </view>

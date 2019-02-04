@@ -54,7 +54,6 @@ class ViewController: UIViewController {
     
     @IBAction func p2update(_ sender: UIButton) {
         changeScore(sender, p2score, scoreInput[2].text!, scores[1], 1)
-        print(scoreInput.count)
     }
     
     @IBAction func p3update(_ sender: UIButton) {
